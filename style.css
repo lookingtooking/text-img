@@ -1,0 +1,40 @@
+img {
+  width: 125%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 800px;
+  height: 300px;
+  filter: brightness(100%)
+}
+
+.block {
+  box-sizing: border-box;
+  width: 400px;
+  height: 300px;
+  float: left;
+}
+
+.left {
+  text-align: center;
+  padding-top: 130px;
+  background-color: rgb(228, 228, 228);
+  overflow: hidden;
+}
+
+.right {
+  overflow: hidden;
+  background-size: 100% 100%;
+  background-image: url(assets/bg.jpg);
+}
+
+.container:hover {
+  transition: 0.3s;
+  filter: brightness(55%);
+}
+
+.container:hover img {
+  transform: scale(1.8);
+  transition: 1s;
+}
